@@ -1,6 +1,10 @@
 name: 'Release branch detection'
 description: 'Detect new release branch and archive old ones'
+author: 'Edgaraszs'
 inputs:
+  github_token:
+    description: "GITHUB_TOKEN secret"
+    required: true
   who-to-greet:
     description: 'Who to greet'
     required: true
