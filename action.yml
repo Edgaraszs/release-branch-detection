@@ -1,13 +1,12 @@
-# action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Release branch detection'
+description: 'Detect new release branch and archive old ones'
 inputs:
-  who-to-greet:  # id of input
+  who-to-greet:
     description: 'Who to greet'
     required: true
     default: 'World'
 outputs:
-  time: # id of output
+  time:
     description: 'The time we greeted you'
 runs:
   using: 'docker'

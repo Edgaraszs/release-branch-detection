@@ -1,6 +1,6 @@
 # Release branch detection docker action
 
-This action ... add your description here ...
+This GitHub action detects new release branch and archives old release branches.
 
 ## Inputs
 
