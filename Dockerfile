@@ -1,5 +1,7 @@
 FROM alpine:latest
 
-COPY release-branch-detection.sh /release-branch-detection.sh
+RUN apk add --no-cache bash
 
-ENTRYPOINT ["/release-branch-detection.sh"]
+COPY release-branch-detection.sh /usr/local/bin/release-branch-detection.sh
+
+ENTRYPOINT ["/usr/local/bin/release-branch-detection.sh"]
