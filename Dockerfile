@@ -1,5 +1,5 @@
 FROM alpine:latest
 
-COPY release-branch-detection.sh /usr/bin/release-branch-detection.sh
+COPY release-branch-detection.sh /release-branch-detection.sh
 
-ENTRYPOINT ["/usr/bin/release-branch-detection.sh"]
+ENTRYPOINT ["/release-branch-detection.sh"]
