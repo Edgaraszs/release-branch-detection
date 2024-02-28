@@ -1,4 +1,5 @@
 # Release branch detection action
+![shellcheck](https://github.com/Edgaraszs/release-branch-detection/actions/workflows/shellcheck/badge.svg)
 
 This GitHub action detects new release branch and archives old release branches.
 
