@@ -51,7 +51,7 @@ main() {
     for branch in "${!release_versions[@]}"; do
         version="${release_versions[$branch]}"
         if (( version != highest_version )); then
-            rename_to_archive $branch
+            rename_to_archive "$branch"
         fi
     done
 
