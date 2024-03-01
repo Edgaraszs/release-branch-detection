@@ -23,7 +23,7 @@ rename_to_archive() {
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${REPO_TOKEN}" \
             "https://api.github.com/repos/${REPO}/branches/${branch}/rename" \
-            -d '{"new_name":"archive/'"${branch}"'"}' >/dev/null
+            -d '{"new_name":"archive/'"${branch}"'"}'
 }
 
 main() {
